@@ -40,7 +40,6 @@ public class WeatherService {
 	private final RestClient restClient;
 
 	public WeatherService() {
-
 		this.restClient = RestClient.builder()
 			.baseUrl(BASE_URL)
 			.defaultHeader("Accept", "application/geo+json")
@@ -162,5 +161,4 @@ public class WeatherService {
 		System.out.println(client.getWeatherForecastByLocation(47.6062, -122.3321));
 		System.out.println(client.getAlerts("NY"));
 	}
-
 }

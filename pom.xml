@@ -12,7 +12,7 @@
 
     <groupId>com.example</groupId>
 
-    <artifactId>mcp-weather-stdio-server</artifactId>
+    <artifactId>starter-stdio-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <name>Spring AI MCP Weather STDIO server</name>
@@ -40,6 +40,12 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.14</version>
         </dependency>
     </dependencies>
 

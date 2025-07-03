@@ -43,7 +43,7 @@ public class ClientStdio {
 						"-Dspring.main.web-application-type=none",
 						"-Dlogging.pattern.console=",
 						"-jar",
-					"C:\\xdev\\works\\starter-stdio-server\\target\\mcp-weather-stdio-server-0.0.1-SNAPSHOT.jar")
+					"/Users/xuny/xdev/works/starter-stdio-server/target/mcp-weather-stdio-server-0.0.1-SNAPSHOT.jar")
 				.build();
 
 		var transport = new StdioClientTransport(stdioParams);
@@ -69,7 +69,7 @@ public class ClientStdio {
 
 		CallToolResult alertResult =
 				client.callTool(
-						new CallToolRequest("getAlerts", Map.of("state", "NY"))
+						new CallToolRequest("getAlerts", Map.of("state", "CA"))
 				);
 		System.out.println("Alert Response = " + alertResult);
 		System.out.println();
